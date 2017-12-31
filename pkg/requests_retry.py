@@ -138,6 +138,7 @@ class RetryRule:
         self.backoff(self.retry_delay)
 
     def backoff(self, seconds):
+        logger.debug('rule backing off for {:.2f}s'.format(seconds))
         time.sleep(seconds)
 
 
@@ -241,6 +242,7 @@ class SessionRetry:
         Suspend other requests if we are currently backing off
         """
         with self.lock.lock():
+            logger.debug('backing off for {:.2f}s'.format(self.retry_backoff))
             time.sleep(self.retry_backoff)
 
 
@@ -280,6 +282,6 @@ class RetryLock:
             self.event.wait()
             taken = time.time() - ts
             logger.debug('request finished waiting for lock to be '
-                         'released, took {:.2f}d'.format(taken))
+                         'released, took {:.2f}s'.format(taken))
 
 
