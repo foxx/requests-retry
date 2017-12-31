@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  default:
+    build: .
+    command: /bin/bash -i
+    volumes:
+      - ./:/home/user/src/
