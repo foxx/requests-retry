@@ -2,7 +2,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="requests_retry",
+    name="requests-retry",
     version="0.8.0",
     package_dir={'': 'pkg'},
     py_modules=['requests_retry'],
