@@ -3,7 +3,7 @@ attrs==17.4.0
 certifi==2017.11.5
 chardet==3.0.4
 coverage==4.4.2
-cryptography==1.9
+cryptography==3.2
 freezegun==0.3.9
 idna==2.5
 keyring==10.4.0
