@@ -9,7 +9,7 @@ idna==2.5
 keyring==10.4.0
 keyrings.alt==2.2
 pluggy==0.6.0
-py==1.5.2
+py==1.10.0
 pycrypto==2.6.1
 pygobject==3.24.1
 pytest==3.3.1
